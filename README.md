@@ -138,13 +138,13 @@ This repository documents my growth in:
 Clone the repository:
 
 ```bash
-git clone https://github.com/adnan-abdullahi/hotel-booking-confirmation.git
+git clone https://github.com/adnan-abdullahi/hotel-booking-confirmation-page-main.git
 ```
 
 Open the project folder:
 
 ```bash
-cd hotel-booking-confirmation
+cd hotel-booking-confirmation-page-main
 ```
 
 Open `index.html` in your browser.
@@ -177,9 +177,3 @@ I am **Adnan Abdullahi**, a Computer Scientist, frontend engineer, educator, and
 My goal is not only to build software but also to build people by documenting my learning journey and creating educational resources that help aspiring developers become disciplined software engineers.
 
 This repository is one step in that journey.
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
