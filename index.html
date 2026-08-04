@@ -1,48 +1,163 @@
 <!DOCTYPE html>
 
-<!--
-==========================================================
-Project: Hotel Booking Confirmation Page
-Source : Frontend Mentor
-Author : Adnan Abdullahi
-Description:
-This project documents the complete frontend engineering
-process from planning to implementation.
-==========================================================
--->
+<!-- ============================================================
+     Hotel Booking Confirmation Page
+     Frontend Mentor Challenge
+
+     Author  : Adnan Abdullahi
+     Project : Hotel Booking Confirmation Page
+     Purpose : Semantic HTML implementation following
+               engineering best practices.
+
+     This document serves as the structural foundation
+     of the application before CSS and JavaScript are applied.
+============================================================= -->
 
 <html lang="en">
 
     <head>
 
-        <!-- Character Encoding -->
+        <!-- ========================================================
+            Document Metadata
+        ========================================================= -->
+
         <meta charset="UTF-8">
 
-        <!-- Responsive Viewport -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0">
 
-        <!-- Browser Tab Title -->
-        <title>Hotel Booking Confirmation</title>
+        <meta
+            name="description"
+            content="Hotel Booking Confirmation Page built as a Frontend Mentor challenge using semantic HTML, CSS, and JavaScript.">
 
-        <!-- Main Stylesheet -->
-        <link rel="stylesheet" href="css/style.css">
+        <title>Hotel Booking Confirmation Page</title>
 
-        <!-- Main JavaScript File -->
-        <script defer src="js/script.js"></script>
+        <!-- ========================================================
+            Google Fonts
+
+            Fraunces
+            DM Sans
+            DM Mono
+        ========================================================= -->
+
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com">
+
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin>
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Fraunces:ital,wght@0,400;1,400&display=swap"
+            rel="stylesheet">
+
+        <!-- ========================================================
+            Main Stylesheet
+        ========================================================= -->
+
+        <link
+            rel="stylesheet"
+            href="css/style.css">
+
+        <!-- ========================================================
+            Main JavaScript
+
+            The 'defer' attribute ensures that JavaScript
+            executes only after the HTML has been fully parsed.
+        ========================================================= -->
+
+        <script
+            src="js/script.js"
+            defer>
+        </script>
 
     </head>
 
+    <!-- ============================================================
+        Body
+        Main Application Layout
+    ============================================================ -->
+
     <body>
 
-        <!--
-        ======================================================
-        Main Page Content
-        All visible interface components will be implemented
-        inside this section throughout the project.
-        ======================================================
-        -->
+        <!-- ========================================================
+            Application Wrapper
 
+            This wrapper contains the entire webpage.
+            It will later become our primary CSS layout container.
+        ========================================================= -->
 
+        <div class="app">
+
+            <!-- ==========================================================
+                SIDEBAR
+                Contains the hotel branding, navigation, weather card,
+                and hotel information.
+            ========================================================== -->
+
+            <aside class="sidebar">
+
+                <!-- ======================================================
+                    SIDEBAR HEADER
+                    Displays the Maison Soleil brand and the mobile menu
+                    toggle button.
+                ======================================================= -->
+
+                <header class="sidebar__header">
+
+                    <!-- ==============================================
+                        BRAND
+                        Groups the hotel logo and brand name.
+                    =============================================== -->
+
+                    <div class="sidebar__brand">
+
+                        <!-- Hotel Logo -->
+
+                        <img
+                            class="sidebar__logo"
+                            src="images/logo.svg"
+                            alt="Maison Soleil logo">
+
+                    </div>
+
+                    <!-- ==============================================
+                        MOBILE MENU TOGGLE
+                        Hidden on desktop.
+                        Displayed on smaller screens.
+                    =============================================== -->
+
+                    <button
+                        class="sidebar__menu-button"
+                        type="button"
+                        aria-label="Open navigation menu">
+
+                        <!-- Menu icon will be inserted later -->
+
+                    </button>
+
+                </header>
+
+            </aside>
+
+            <!-- ====================================================
+                Main Content
+
+                Contains:
+                - Booking Confirmation
+                - Booking Receipt
+                - Welcome Message
+                - Guest Information Cards
+            ===================================================== -->
+
+            <main class="main-content">
+
+            </main>
+
+        </div>
 
     </body>
 
