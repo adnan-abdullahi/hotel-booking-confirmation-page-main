@@ -133,13 +133,249 @@
                     <button
                         class="sidebar__menu-button"
                         type="button"
+                        aria-expanded="false"
+                        aria-controls="sidebar-navigation"
                         aria-label="Open navigation menu">
 
-                        <!-- Menu icon will be inserted later -->
+                        <img
+                            class="sidebar__menu-icon"
+                            src="images/icon-menu.svg"
+                            alt="">
 
                     </button>
 
                 </header>
+
+                <!-- ======================================================
+                    SIDEBAR NAVIGATION
+                    Primary navigation for the hotel guest dashboard.
+                ====================================================== -->
+
+                <nav
+                    class="sidebar__navigation"
+                    aria-label="Primary navigation">
+
+                    <ul class="sidebar__navigation-list">
+
+                        <!-- ==============================================
+                            Navigation Item — Your Stay (Active)
+                        =============================================== -->
+
+                        <li class="sidebar__navigation-item">
+
+                            <a
+                                class="sidebar__navigation-link sidebar__navigation-link--active"
+                                href="#">
+
+                                <img
+                                    class="sidebar__navigation-icon"
+                                    src="images/icon-bed.svg"
+                                    alt="">
+
+                                <span class="sidebar__navigation-text">
+                                    Your stay
+                                </span>
+
+                                <span
+                                    class="sidebar__navigation-badge"
+                                    aria-label="1 notification">
+                                    1
+                                </span>
+
+                            </a>
+
+                        </li>
+
+                        <!-- ==============================================
+                            Navigation Item — The House
+                        =============================================== -->
+
+                        <li class="sidebar__navigation-item">
+
+                            <a
+                                class="sidebar__navigation-link"
+                                href="#">
+
+                                <img
+                                    class="sidebar__navigation-icon"
+                                    src="images/icon-house.svg"
+                                    alt="">
+
+                                <span class="sidebar__navigation-text">
+                                    The house
+                                </span>
+
+                            </a>
+
+                        </li>
+
+                        <!-- ==============================================
+                            Navigation Item — Around Town
+                        =============================================== -->
+
+                        <li class="sidebar__navigation-item">
+
+                            <a
+                                class="sidebar__navigation-link"
+                                href="#">
+
+                                <img
+                                    class="sidebar__navigation-icon"
+                                    src="images/icon-pin.svg"
+                                    alt="">
+
+                                <span class="sidebar__navigation-text">
+                                    Around town
+                                </span>
+
+                            </a>
+
+                        </li>
+
+                        <!-- ==============================================
+                            Navigation Item — Breakfast
+                        =============================================== -->
+
+                        <li class="sidebar__navigation-item">
+
+                            <a
+                                class="sidebar__navigation-link"
+                                href="#">
+
+                                <img
+                                    class="sidebar__navigation-icon"
+                                    src="images/icon-breakfast-outline.svg"
+                                    alt="">
+
+                                <span class="sidebar__navigation-text">
+                                    Breakfast
+                                </span>
+
+                            </a>
+
+                        </li>
+
+                        <!-- ==============================================
+                            Navigation Item — Messages
+                        =============================================== -->
+
+                        <li class="sidebar__navigation-item">
+
+                            <a
+                                class="sidebar__navigation-link"
+                                href="#">
+
+                                <img
+                                    class="sidebar__navigation-icon"
+                                    src="images/icon-mail.svg"
+                                    alt="">
+
+                                <span class="sidebar__navigation-text">
+                                    Messages
+                                </span>
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                <!-- ======================================================
+                    WEATHER CARD
+                    Displays the current weather information for Cassis.
+                ====================================================== -->
+
+                <section class="sidebar__weather">
+
+                    <!-- Weather Card -->
+
+                    <div class="weather-card">
+
+                        <!-- ==========================================
+                            Decorative Weather Illustration
+                        =========================================== -->
+
+                        <img
+                            class="weather-card__sun"
+                            src="images/illustration-sun.svg"
+                            alt="">
+
+                        <!-- ==========================================
+                            Weather Location
+                        =========================================== -->
+
+                        <p class="weather-card__location">
+
+                            Today in Cassis
+
+                        </p>
+
+                        <!-- ==========================================
+                            Current Temperature
+                        =========================================== -->
+
+                        <p class="weather-card__temperature">
+
+                            27°
+
+                        </p>
+
+                        <!-- ==========================================
+                            Weather Description
+                        =========================================== -->
+
+                        <p class="weather-card__description">
+
+                            Sunny · light breeze
+
+                        </p>
+
+                    </div>
+
+                </section>
+
+                <!-- ======================================================
+                    SIDEBAR FOOTER
+                    Displays hotel establishment details and address.
+                ====================================================== -->
+
+                <footer class="sidebar__footer">
+
+                    <!-- ==============================================
+                        Hotel Establishment Year
+                    =============================================== -->
+
+                    <p class="sidebar__established">
+
+                        EST. 1987
+
+                    </p>
+
+                    <!-- ==============================================
+                        Hotel Address
+                    =============================================== -->
+
+                    <address class="sidebar__address">
+
+                        Maison Soleil ·
+                        12 Rue des Oliviers ·
+                        Cassis
+
+                    </address>
+
+                    <!-- ==============================================
+                        Copyright Information
+                    =============================================== -->
+
+                    <p class="sidebar__copyright">
+
+                        &copy; 2026 Maison Soleil
+
+                    </p>
+
+                </footer>
 
             </aside>
 
