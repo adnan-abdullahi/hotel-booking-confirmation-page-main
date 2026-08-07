@@ -386,317 +386,412 @@
 
             <main class="main-content">
 
-                <!-- ======================================================
-                    PAGE HEADER
-                    Displays booking information and page actions.
-                ======================================================= -->
-
-                <header class="page-header">
+                <section class="hero">
 
                     <!-- ======================================================
-                        PAGE HEADER CONTENT
-                    ====================================================== -->
+                        PAGE HEADER
+                        Displays booking information and page actions.
+                    ======================================================= -->
 
-                    <div class="page-header__content">
-
-                        <!-- ==============================================
-                            Booking Status
-                        =============================================== -->
-
-                        <p class="booking-status">
-
-                            <span class="booking-status__label">
-                                Booking
-                            </span>
-
-                            <span
-                                class="booking-status__separator"
-                                aria-hidden="true">
-                                •
-                            </span>
-
-                            <span class="booking-status__state">
-                                Confirmed
-                            </span>
-
-                        </p>
-
-                        <!-- ==============================================
-                            Page Title
-                        =============================================== -->
-
-                        <h1 class="page-header__title">
-
-                            Bienvenue,
-                            <em class="page-header__guest-name">
-                                Lucia.
-                            </em>
-
-                        </h1>
-
-                    </div>
-
-                    <!-- ======================================================
-                        PAGE ACTIONS
-                    ====================================================== -->
-
-                    <div class="page-header__actions">
-
-                        <!-- Print Receipt Button -->
-
-                        <button
-                            class="button button--secondary"
-                            type="button">
-
-                            Print receipt
-
-                        </button>
-
-                        <!-- Add to Calendar Button -->
-
-                        <button
-                            class="button button--primary"
-                            type="button">
-
-                            Add to calendar
-
-                        </button>
-
-                    </div>
-
-                </header>
-
-                <!-- ======================================================
-                    HERO CONTENT
-                    Contains the primary booking cards displayed in an
-                    overlapping layout on larger screens.
-                ====================================================== -->
-
-                <div class="hero-section__layout">
-
-                    <!-- ==================================================
-                        BOOKING RECEIPT CARD
-                        Displays the guest booking confirmation details.
-                    =================================================== -->
-
-                    <article class="receipt-card">
+                    <header class="page-header">
 
                         <!-- ======================================================
-                            RECEIPT HEADER
-                            Displays the receipt title and booking reference.
+                            PAGE HEADER CONTENT
                         ====================================================== -->
 
-                        <header class="receipt-card__header">
+                        <div class="page-header__content">
 
                             <!-- ==============================================
-                                Receipt Heading
+                                Booking Status
                             =============================================== -->
 
-                            <div class="receipt-card__heading">
+                            <p class="booking-status">
 
-                                <p class="receipt-card__label">
-                                    Receipt
+                                <span class="booking-status__label">
+                                    Booking
+                                </span>
+
+                                <span
+                                    class="booking-status__separator"
+                                    aria-hidden="true">
+                                    •
+                                </span>
+
+                                <span class="booking-status__state">
+                                    Confirmed
+                                </span>
+
+                            </p>
+
+                            <!-- ==============================================
+                                Page Title
+                            =============================================== -->
+
+                            <h1 class="page-header__title">
+
+                                Bienvenue,
+                                <em class="page-header__guest-name">
+                                    Lucia.
+                                </em>
+
+                            </h1>
+
+                        </div>
+
+                        <!-- ======================================================
+                            PAGE ACTIONS
+                        ====================================================== -->
+
+                        <div class="page-header__actions">
+
+                            <!-- Print Receipt Button -->
+
+                            <button
+                                class="button button--secondary"
+                                type="button">
+
+                                Print receipt
+
+                            </button>
+
+                            <!-- Add to Calendar Button -->
+
+                            <button
+                                class="button button--primary"
+                                type="button">
+
+                                Add to calendar
+
+                            </button>
+
+                        </div>
+
+                    </header>
+
+                    <!-- ======================================================
+                        HERO CONTENT
+                        Contains the primary booking cards displayed in an
+                        overlapping layout on larger screens.
+                    ====================================================== -->
+
+                    <div class="hero-section__layout">
+
+                        <!-- ==================================================
+                            BOOKING RECEIPT CARD
+                            Displays the guest booking confirmation details.
+                        =================================================== -->
+
+                        <article class="receipt-card">
+
+                            <!-- ======================================================
+                                RECEIPT HEADER
+                                Displays the receipt title and booking reference.
+                            ====================================================== -->
+
+                            <header class="receipt-card__header">
+
+                                <!-- ==============================================
+                                    Receipt Heading
+                                =============================================== -->
+
+                                <div class="receipt-card__heading">
+
+                                    <p class="receipt-card__label">
+                                        Receipt
+                                    </p>
+
+                                    <h2 class="receipt-card__title">
+                                        Your stay
+                                    </h2>
+
+                                </div>
+
+                                <!-- ==============================================
+                                    Booking Reference
+                                =============================================== -->
+
+                                <div class="receipt-card__reference">
+
+                                    <p class="receipt-card__reference-number">
+                                        No MS-2026
+                                    </p>
+
+                                    <p class="receipt-card__reference-code">
+                                        0421-AH
+                                    </p>
+
+                                </div>
+
+                            </header>
+
+                            <!-- ======================================================
+                                STAY DATES
+                                Displays the guest's arrival and departure dates.
+                            ====================================================== -->
+
+                            <section class="receipt-card__dates">
+
+                                <!-- ==============================================
+                                    Check-in Information
+                                =============================================== -->
+
+                                <div class="receipt-card__date">
+
+                                    <p class="receipt-card__date-label">
+                                        Check In
+                                    </p>
+
+                                    <p class="receipt-card__date-value">
+                                        25 Apr
+                                    </p>
+
+                                    <p class="receipt-card__date-description">
+                                        Saturday · 15:00
+                                    </p>
+
+                                </div>
+
+                                <!-- ==============================================
+                                    Check-out Information
+                                =============================================== -->
+
+                                <div class="receipt-card__date">
+
+                                    <p class="receipt-card__date-label">
+                                        Check Out
+                                    </p>
+
+                                    <p class="receipt-card__date-value">
+                                        29 Apr
+                                    </p>
+
+                                    <p class="receipt-card__date-description">
+                                        Wednesday · 11:00
+                                    </p>
+
+                                </div>
+
+                            </section>
+
+                            <!-- ======================================================
+                                CHARGES
+                                Displays a summary of all booking charges.
+                            ====================================================== -->
+
+                            <section class="receipt-card__charges">
+
+                                <!-- ==============================================
+                                    Room Charge
+                                =============================================== -->
+
+                                <div class="receipt-card__charge">
+
+                                    <p class="receipt-card__charge-description">
+                                        Room · La Garrigue × 4 nights
+                                    </p>
+
+                                    <p class="receipt-card__charge-price">
+                                        €620.00
+                                    </p>
+
+                                </div>
+
+                                <!-- ==============================================
+                                    Breakfast Charge
+                                =============================================== -->
+
+                                <div class="receipt-card__charge">
+
+                                    <p class="receipt-card__charge-description">
+                                        Breakfast × 2 guests
+                                    </p>
+
+                                    <p class="receipt-card__charge-price">
+                                        €96.00
+                                    </p>
+
+                                </div>
+
+                                <!-- ==============================================
+                                    Tourist Tax
+                                =============================================== -->
+
+                                <div class="receipt-card__charge">
+
+                                    <p class="receipt-card__charge-description">
+                                        Tourist tax
+                                    </p>
+
+                                    <p class="receipt-card__charge-price">
+                                        €14.40
+                                    </p>
+
+                                </div>
+
+                            </section>
+
+                            <!-- ======================================================
+                                RECEIPT TOTAL
+                                Displays the total amount paid for the booking.
+                            ====================================================== -->
+
+                            <section class="receipt-card__total">
+
+                                <p class="receipt-card__total-label">
+                                    Total Paid
                                 </p>
 
-                                <h2 class="receipt-card__title">
-                                    Your stay
+                                <p class="receipt-card__total-amount">
+                                    €730.40
+                                </p>
+
+                            </section>
+
+                            <!-- ======================================================
+                                RECEIPT FOOTER
+                                Displays payment information and receipt barcode.
+                            ====================================================== -->
+
+                            <footer class="receipt-card__footer">
+
+                                <!-- ==============================================
+                                    Payment Information
+                                =============================================== -->
+
+                                <p class="receipt-card__payment-method">
+                                    Paid · Wise · GBP
+                                </p>
+
+                                <!-- ==============================================
+                                    Receipt Barcode
+                                    Decorative image representing the receipt.
+                                =============================================== -->
+
+                                <img
+                                    class="receipt-card__barcode"
+                                    src="images/icon-barcode.svg"
+                                    alt="">
+
+                            </footer>
+
+                        </article>
+
+                            <!-- ==========================================
+                                DECORATIVE SUN
+                            ========================================== -->
+
+                            <div
+                                class="hero__sun"
+                                aria-hidden="true">
+
+                                <!-- Decorative Sun Icon -->
+
+                                <img
+                                    src="images/illustration-sun.svg"
+                                    alt="">
+
+                            </div>
+
+                        <!-- ==================================================
+                            HOST WELCOME CARD
+                            Displays the welcome note from Maison Soleil.
+                        =================================================== -->
+
+                        <article class="welcome-card">
+
+                            <!-- ======================================================
+                                WELCOME CARD
+                                Displays a personal welcome message from the hotel host.
+                            ====================================================== -->
+
+                            <!-- ==========================================
+                                WELCOME CARD HEADER
+                            ========================================== -->
+
+                            <header class="welcome-card__header">
+
+                                <!-- Card Label -->
+
+                                <p class="welcome-card__label">
+
+                                    Welcome Card
+
+                                </p>
+
+                                <!-- Decorative Sun Icon -->
+
+                                <img
+                                    class="welcome-card__icon"
+                                    src="images/icon-sun.svg"
+                                    alt="">
+
+                            </header>
+
+                            <!-- ==========================================
+                                HOST MESSAGE
+                            ========================================== -->
+
+                            <section class="welcome-card__content">
+
+                                <!-- Intro -->
+
+                                <p class="welcome-card__intro">
+
+                                    A note from your host,
+
+                                </p>
+
+                                <!-- Host Name -->
+
+                                <h2 class="welcome-card__host">
+
+                                    Margaux.
+
                                 </h2>
 
-                            </div>
+                                <!-- Welcome Message -->
 
-                            <!-- ==============================================
-                                Booking Reference
-                            =============================================== -->
+                                <p class="welcome-card__message">
 
-                            <div class="receipt-card__reference">
+                                    We're so glad you're coming.
+                                    The shutters will be open,
+                                    the lemonade cold,
+                                    and the cat—Poivre—pretending
+                                    not to notice you.
 
-                                <p class="receipt-card__reference-number">
-                                    No MS-2026
                                 </p>
 
-                                <p class="receipt-card__reference-code">
-                                    0421-AH
+                            </section>
+
+                            <!-- ==========================================
+                                ROOM INFORMATION
+                            ========================================== -->
+
+                            <footer class="welcome-card__footer">
+
+                                <!-- Room Label -->
+
+                                <p class="welcome-card__room-label">
+
+                                    Room
+
                                 </p>
 
-                            </div>
+                                <!-- Room Name -->
 
-                        </header>
+                                <p class="welcome-card__room-name">
 
-                        <!-- ======================================================
-                            STAY DATES
-                            Displays the guest's arrival and departure dates.
-                        ====================================================== -->
+                                    La Garrigue
 
-                        <section class="receipt-card__dates">
-
-                            <!-- ==============================================
-                                Check-in Information
-                            =============================================== -->
-
-                            <div class="receipt-card__date">
-
-                                <p class="receipt-card__date-label">
-                                    Check In
                                 </p>
 
-                                <p class="receipt-card__date-value">
-                                    25 Apr
-                                </p>
+                            </footer>
 
-                                <p class="receipt-card__date-description">
-                                    Saturday · 15:00
-                                </p>
+                        </article>
 
-                            </div>
+                    </div>
 
-                            <!-- ==============================================
-                                Check-out Information
-                            =============================================== -->
-
-                            <div class="receipt-card__date">
-
-                                <p class="receipt-card__date-label">
-                                    Check Out
-                                </p>
-
-                                <p class="receipt-card__date-value">
-                                    29 Apr
-                                </p>
-
-                                <p class="receipt-card__date-description">
-                                    Wednesday · 11:00
-                                </p>
-
-                            </div>
-
-                        </section>
-
-                        <!-- ======================================================
-                            CHARGES
-                            Displays a summary of all booking charges.
-                        ====================================================== -->
-
-                        <section class="receipt-card__charges">
-
-                            <!-- ==============================================
-                                Room Charge
-                            =============================================== -->
-
-                            <div class="receipt-card__charge">
-
-                                <p class="receipt-card__charge-description">
-                                    Room · La Garrigue × 4 nights
-                                </p>
-
-                                <p class="receipt-card__charge-price">
-                                    €620.00
-                                </p>
-
-                            </div>
-
-                            <!-- ==============================================
-                                Breakfast Charge
-                            =============================================== -->
-
-                            <div class="receipt-card__charge">
-
-                                <p class="receipt-card__charge-description">
-                                    Breakfast × 2 guests
-                                </p>
-
-                                <p class="receipt-card__charge-price">
-                                    €96.00
-                                </p>
-
-                            </div>
-
-                            <!-- ==============================================
-                                Tourist Tax
-                            =============================================== -->
-
-                            <div class="receipt-card__charge">
-
-                                <p class="receipt-card__charge-description">
-                                    Tourist tax
-                                </p>
-
-                                <p class="receipt-card__charge-price">
-                                    €14.40
-                                </p>
-
-                            </div>
-
-                        </section>
-
-                        <!-- ======================================================
-                            RECEIPT TOTAL
-                            Displays the total amount paid for the booking.
-                        ====================================================== -->
-
-                        <section class="receipt-card__total">
-
-                            <p class="receipt-card__total-label">
-                                Total Paid
-                            </p>
-
-                            <p class="receipt-card__total-amount">
-                                €730.40
-                            </p>
-
-                        </section>
-
-                        <!-- ======================================================
-                            RECEIPT FOOTER
-                            Displays payment information and receipt barcode.
-                        ====================================================== -->
-
-                        <footer class="receipt-card__footer">
-
-                            <!-- ==============================================
-                                Payment Information
-                            =============================================== -->
-
-                            <p class="receipt-card__payment-method">
-                                Paid · Wise · GBP
-                            </p>
-
-                            <!-- ==============================================
-                                Receipt Barcode
-                                Decorative image representing the receipt.
-                            =============================================== -->
-
-                            <img
-                                class="receipt-card__barcode"
-                                src="images/icon-barcode.svg"
-                                alt="">
-
-                        </footer>
-
-                    </article>
-
-                    <!-- ==================================================
-                        HOST WELCOME CARD
-                        Displays the welcome note from Maison Soleil.
-                    =================================================== -->
-
-                    <article class="welcome-card">
-
-                        <!-- Welcome message will be implemented
-                            in Sprint 5.5 -->
-
-                    </article>
-
-                    <!-- ==================================================
-                        DECORATIVE SUN ILLUSTRATION
-                        Decorative only.
-                    =================================================== -->
-
-                    <img
-                        class="hero__sun"
-                        src="images/illustration-sun.svg"
-                        alt="">
-
-                </div>
+                </section>
 
                 <!-- ======================================================
                     INFORMATION CARDS
