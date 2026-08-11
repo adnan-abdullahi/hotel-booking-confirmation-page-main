@@ -1,11 +1,4 @@
 /* ============================================================
-   TECHNICAL FOUNDATION
-   Hotel Booking Confirmation Page
-   Sprint 6.1 — CSS Foundation
-============================================================ */
-
-
-/* ============================================================
    1. CSS CUSTOM PROPERTIES
    Design tokens taken directly from the provided
    Frontend Mentor style guide.
@@ -211,4 +204,324 @@ p {
     width: 100%;
     max-width: var(--content-max-width);
     margin-inline: auto;
+}
+
+/* ============================================================
+   10. SIDEBAR BASE
+   The sidebar occupies the first column of the application
+   layout and remains visible throughout the desktop page.
+============================================================ */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+
+    padding: 32px 24px;
+
+    background-color: var(--color-neutral-900);
+    color: var(--color-neutral-0);
+}
+
+/* ============================================================
+   11. SIDEBAR HEADER
+   Contains the hotel branding and mobile navigation control.
+============================================================ */
+
+.sidebar__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 48px;
+}
+
+
+/* ============================================================
+   SIDEBAR BRAND
+============================================================ */
+
+.sidebar__brand {
+    display: flex;
+    align-items: center;
+}
+
+
+/* ============================================================
+   SIDEBAR LOGO
+============================================================ */
+
+.sidebar__logo {
+    width: auto;
+    max-width: 170px;
+    height: auto;
+}
+
+/* ============================================================
+   12. MOBILE MENU BUTTON
+   The menu control is hidden on the desktop layout.
+   Responsive behavior will be introduced in Sprint 6.9.
+============================================================ */
+
+.sidebar__menu-button {
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 0;
+
+    background: transparent;
+    color: inherit;
+
+    cursor: pointer;
+}
+
+
+/* ============================================================
+   MOBILE MENU ICON
+============================================================ */
+
+.sidebar__menu-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* ============================================================
+   13. SIDEBAR NAVIGATION
+============================================================ */
+
+.sidebar__navigation {
+    margin-bottom: 40px;
+}
+
+
+.sidebar__navigation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+/* ============================================================
+   NAVIGATION LINK
+   Each navigation item behaves as a single interactive unit.
+============================================================ */
+
+.sidebar__navigation-link {
+    display: flex;
+    align-items: center;
+
+    min-height: 48px;
+
+    padding: 10px 12px;
+
+    border-radius: 8px;
+
+    color: var(--color-neutral-400);
+
+    transition:
+        background-color 180ms ease,
+        color 180ms ease;
+}
+
+
+/* ============================================================
+   NAVIGATION ICON
+============================================================ */
+
+.sidebar__navigation-icon {
+    flex: 0 0 auto;
+
+    width: 20px;
+    height: 20px;
+
+    margin-right: 12px;
+}
+
+
+/* ============================================================
+   NAVIGATION TEXT
+============================================================ */
+
+.sidebar__navigation-text {
+    flex: 1;
+
+    font-size: 0.875rem;
+}
+
+
+/* ============================================================
+   NAVIGATION BADGE
+============================================================ */
+
+.sidebar__navigation-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 22px;
+    height: 22px;
+
+    padding-inline: 6px;
+
+    border-radius: 999px;
+
+    background-color: var(--color-terracotta-500);
+    color: var(--color-neutral-0);
+
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+}
+
+/* ============================================================
+   NAVIGATION HOVER STATE
+============================================================ */
+
+.sidebar__navigation-link:hover {
+    background-color: var(--color-neutral-800);
+    color: var(--color-neutral-0);
+}
+
+
+/* ============================================================
+   NAVIGATION ACTIVE STATE
+============================================================ */
+
+.sidebar__navigation-link--active {
+    background-color: var(--color-neutral-800);
+    color: var(--color-neutral-0);
+}
+
+
+/* ============================================================
+   KEYBOARD FOCUS STATE
+   Provides a visible focus indicator for keyboard users.
+============================================================ */
+
+.sidebar__navigation-link:focus-visible,
+.sidebar__menu-button:focus-visible {
+    outline: 2px solid var(--color-sun-300);
+    outline-offset: 3px;
+}
+
+/* ============================================================
+   14. WEATHER CARD
+   Provides the visual weather block near the lower portion
+   of the sidebar.
+============================================================ */
+
+.sidebar__weather {
+    margin-top: auto;
+}
+
+
+.weather-card {
+    position: relative;
+
+    overflow: hidden;
+
+    min-height: 180px;
+
+    padding: 24px;
+
+    border-radius: 12px;
+
+    background-color: var(--color-sun-50);
+    color: var(--color-neutral-900);
+}
+
+/* ============================================================
+   WEATHER SUN
+   Decorative illustration positioned independently from
+   the weather text.
+============================================================ */
+
+.weather-card__sun {
+    position: absolute;
+
+    top: -24px;
+    right: -20px;
+
+    width: 100px;
+    height: 100px;
+}
+
+/* ============================================================
+   WEATHER TEXT
+============================================================ */
+
+.weather-card__location {
+    position: relative;
+    z-index: 1;
+
+    margin-bottom: 12px;
+
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+
+.weather-card__temperature {
+    position: relative;
+    z-index: 1;
+
+    margin-bottom: 4px;
+
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    line-height: 1;
+}
+
+
+.weather-card__description {
+    position: relative;
+    z-index: 1;
+
+    font-size: 0.75rem;
+}
+
+/* ============================================================
+   15. SIDEBAR FOOTER
+   Contains establishment, address and copyright information.
+============================================================ */
+
+.sidebar__footer {
+    padding-top: 32px;
+}
+
+
+.sidebar__established {
+    margin-bottom: 8px;
+
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.08em;
+}
+
+
+.sidebar__address {
+    margin-bottom: 16px;
+
+    color: var(--color-neutral-400);
+
+    font-size: 0.6875rem;
+    font-style: normal;
+    line-height: 1.6;
+}
+
+
+.sidebar__copyright {
+    color: var(--color-neutral-600);
+
+    font-size: 0.6875rem;
 }
