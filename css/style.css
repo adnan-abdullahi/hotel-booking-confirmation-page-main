@@ -1,0 +1,170 @@
+/* ============================================================
+   TECHNICAL FOUNDATION
+   Hotel Booking Confirmation Page
+   Sprint 6.1 — CSS Foundation
+============================================================ */
+
+
+/* ============================================================
+   1. CSS CUSTOM PROPERTIES
+   Design tokens taken directly from the provided
+   Frontend Mentor style guide.
+============================================================ */
+
+:root {
+
+    /* --------------------------------------------------------
+       Neutral Colors
+    -------------------------------------------------------- */
+
+    --color-neutral-900: hsl(33, 15%, 15%);
+    --color-neutral-800: hsl(33, 22%, 20%);
+    --color-neutral-700: hsl(32, 20%, 29%);
+    --color-neutral-600: hsl(33, 17%, 41%);
+    --color-neutral-400: hsl(36, 22%, 86%);
+    --color-neutral-200: hsl(30, 24%, 93%);
+    --color-neutral-100: hsl(35, 60%, 96%);
+    --color-neutral-50: hsl(40, 60%, 98%);
+    --color-neutral-0: hsl(0, 0%, 100%);
+
+
+    /* --------------------------------------------------------
+       Sun Colors
+    -------------------------------------------------------- */
+
+    --color-sun-500: hsl(42, 83%, 58%);
+    --color-sun-300: hsl(44, 84%, 75%);
+    --color-sun-200: hsl(45, 100%, 74%);
+    --color-sun-50: hsl(41, 100%, 93%);
+
+
+    /* --------------------------------------------------------
+       Terracotta Colors
+    -------------------------------------------------------- */
+
+    --color-terracotta-700: hsl(15, 69%, 37%);
+    --color-terracotta-600: hsl(15, 74%, 41%);
+    --color-terracotta-500: hsl(18, 62%, 47%);
+    --color-terracotta-400: hsl(22, 72%, 56%);
+
+
+    /* --------------------------------------------------------
+       Accent Colors
+    -------------------------------------------------------- */
+
+    --color-blue-500: hsl(230, 49%, 56%);
+    --color-rose-500: hsl(340, 48%, 52%);
+
+
+    /* --------------------------------------------------------
+       Typography
+    -------------------------------------------------------- */
+
+    --font-heading: "Fraunces", serif;
+    --font-body: "DM Sans", sans-serif;
+    --font-mono: "DM Mono", monospace;
+
+
+    /* --------------------------------------------------------
+       Base Typography
+    -------------------------------------------------------- */
+
+    --font-size-body: 0.875rem;
+    --line-height-body: 1.5;
+
+
+    /* --------------------------------------------------------
+       Layout
+    -------------------------------------------------------- */
+
+    --content-max-width: 1440px;
+
+}
+
+
+/* ============================================================
+   2. BOX-SIZING RESET
+   Makes width and height calculations predictable.
+============================================================ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* ============================================================
+   3. DOCUMENT RESET
+   Removes browser defaults that would otherwise interfere
+   with the design.
+============================================================ */
+
+html {
+    min-height: 100%;
+}
+
+
+body {
+    min-height: 100vh;
+    margin: 0;
+
+    background-color: var(--color-neutral-50);
+    color: var(--color-neutral-900);
+
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+}
+
+
+/* ============================================================
+   4. MEDIA RESET
+   Prevents images from overflowing their containers.
+============================================================ */
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* ============================================================
+   5. BUTTON RESET
+   Removes inconsistent browser styling.
+   Component-specific styling will be added later.
+============================================================ */
+
+button {
+    font: inherit;
+}
+
+
+/* ============================================================
+   6. LINK RESET
+   Individual navigation states will be styled later.
+============================================================ */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* ============================================================
+   7. TYPOGRAPHY RESET
+   Removes default browser margins.
+============================================================ */
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+
+/* ============================================================
+   SPRINT 6.1 COMPLETE
+   Component-specific styles begin in the next sprint.
+============================================================ */
