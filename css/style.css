@@ -163,8 +163,52 @@ p {
     margin: 0;
 }
 
+/* ============================================================
+   7. APPLICATION LAYOUT
+   Establishes the primary relationship between the sidebar
+   and the main content area.
+
+   Desktop design:
+   - Sidebar occupies a fixed-width column.
+   - Main content occupies the remaining viewport width.
+============================================================ */
+
+.app {
+    display: grid;
+
+    grid-template-columns: 280px minmax(0, 1fr);
+
+    min-height: 100vh;
+}
+
 
 /* ============================================================
-   SPRINT 6.1 COMPLETE
-   Component-specific styles begin in the next sprint.
+   8. MAIN CONTENT AREA
+   Provides the primary canvas for the booking interface.
+
+   The min-width declaration prevents long content inside
+   the main area from forcing the grid wider than the viewport.
 ============================================================ */
+
+.main-content {
+    min-width: 0;
+
+    padding: 48px;
+}
+
+
+/* ============================================================
+   9. CONTENT WIDTH
+   Keeps the primary interface from becoming excessively wide
+   on large desktop screens.
+
+   This will be refined after comparing the actual desktop
+   reference design.
+============================================================ */
+
+.hero,
+.information-cards {
+    width: 100%;
+    max-width: var(--content-max-width);
+    margin-inline: auto;
+}
